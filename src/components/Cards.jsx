@@ -3,7 +3,7 @@ import React from 'react';
 const Cards = () => {
     return (
         <section>
-            <div className='w-full mt-[100px]'>
+            <div className='w-full py-[100px]'>
                 <div className='container mx-auto'>
                     <div>
                         <h2 className='text-center'>
