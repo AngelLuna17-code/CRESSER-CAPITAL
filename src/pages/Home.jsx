@@ -3,10 +3,12 @@ import Navbar from '../components/Navbar';
 
 const Home = () => {
     return (
-        <div>
-            <h1>Home Page</h1>
-            <p>Welcome to the Home Page!</p>
-        </div>
+        <section>
+            <div className='container mx-auto bg-[#1f1f1f]'>
+                <h1>Home Page</h1>
+                <p>Welcome to the Home Page!</p>
+            </div>
+        </section>
     );
 };
 
