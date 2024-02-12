@@ -4,6 +4,7 @@ import Cards from "../components/Cards";
 import Counter from "../components/Counter"
 import Accordion from '../components/Accordion';
 import Form from '../components/Form';
+import Mapa from '../components/Mapa';
 
 const Home = () => {
     return (
@@ -23,6 +24,9 @@ const Home = () => {
             {/* Formulatio */}
             <Form />
             {/* Formulatio */}
+            {/* Mapa */}
+            <Mapa />
+            {/* Mapa */}
         </section>
     );
 };
