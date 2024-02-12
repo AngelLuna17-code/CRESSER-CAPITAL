@@ -22,9 +22,22 @@ body {
   -webkit-backdrop-filter: blur(0)
 }
 
+.paralax-1 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #000;
+  background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url(../public/paralax-1.webp);
+  background-position: 50% 50%;
+  background-attachment: fixed; /* Agregamos esta línea para el efecto de paralaje */
+  overflow: hidden;
+  box-sizing: content-box;
+  backdrop-filter: blur(0);
+  -webkit-backdrop-filter: blur(0);
+}
+
+
 h1 {
   font-size: 34px;
-  /* Tamaño base */
 }
 
 h2 {
@@ -38,7 +51,6 @@ p {
 @media screen and (min-width: 640px) {
   h1 {
     font-size: 36px;
-    /* Tamaño para pantallas de al menos 640px de ancho */
   }
 
   h2 {
@@ -53,7 +65,6 @@ p {
 @media screen and (min-width: 768px) {
   h1 {
     font-size: 38px;
-    /* Tamaño para pantallas de al menos 768px de ancho */
   }
 
   h2 {
@@ -64,7 +75,6 @@ p {
 @media screen and (min-width: 1024px) {
   h1 {
     font-size: 40px;
-    /* Tamaño para pantallas de al menos 1024px de ancho */
   }
 
   h2 {
@@ -79,7 +89,6 @@ p {
 @media screen and (min-width: 1280px) {
   h1 {
     font-size: 42px;
-    /* Tamaño para pantallas de al menos 1280px de ancho */
   }
 
   h2 {
@@ -90,7 +99,6 @@ p {
 @media screen and (min-width: 1536px) {
   h1 {
     font-size: 44px;
-    /* Tamaño para pantallas de al menos 1536px de ancho */
   }
 
   h2 {

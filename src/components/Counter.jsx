@@ -47,22 +47,70 @@ const Counter = () => {
     }, [startCounting]);
 
     return (
-        <div id="counter-section" className='container mx-auto py-[100px]'>
-            <div className='grid grid-cols-2 lg:grid-cols-4'>
-                <div>
-                   
-                </div>
-                <div className='text-center'>
-                    <p>{count1}</p>
-                </div>
-                <div className='text-center'>
-                    <p>{count2}</p>
-                </div>
-                <div className='text-center'>
-                    <p>{count3}%</p>
+        <div className='paralax-1 w-full'>
+            <div id="counter-section" className='container mx-auto py-[100px]'>
+                <div className='grid grid-cols-2 lg:grid-cols-4'>
+                    {/* Col 1 */}
+                    <div className='text-center flex items-center justify-center'>
+                        <h2>
+                            0 perdidas
+                        </h2>
+                    </div>
+                    {/* Col 1 */}
+                    {/* Col 2 */}
+                    <div className='text-center'>
+                        <h2>
+                            {count1}
+                        </h2>
+                        <p className='text-xl'>
+                            <span className='text-[#a18144] '>
+                                inversionistas
+                            </span>
+                            {' '}
+                            felices
+                        </p>
+                    </div>
+                    {/* Col 2 */}
+                    {/* Col 3 */}
+                    <div className='text-center'>
+                        <h2>
+                            {count2}
+                        </h2>
+                        <p className='text-xl'>
+                            15 empresas
+                            {' '}
+                            <span className='text-[#a18144]'>
+                                invirtiendo
+                            </span>
+                        </p>
+                    </div>
+                    {/* Col 3 */}
+                    {/* Col 4 */}
+                    <div className='text-center'>
+                        <h2>
+                            Inversión
+                            {' '}
+                            <span className='text-[#a18144]'>
+                                {count3}
+                                %
+                            </span>
+                            {' '}
+                            segura
+                        </h2>
+                        <p className='text-xl'>
+                            Hasta un rendimiento bruto del
+                            {' '}
+                            <span className='text-[#a18144]'>
+                                20%
+                            </span>
+                            .
+                        </p>
+                    </div>
+                    {/* Col 4 */}
                 </div>
             </div>
         </div>
+
     );
 };
 
