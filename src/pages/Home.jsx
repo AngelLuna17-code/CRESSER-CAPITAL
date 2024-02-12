@@ -3,6 +3,7 @@ import Hero from '../components/Hero';
 import Cards from "../components/Cards";
 import Counter from "../components/Counter"
 import Accordion from '../components/Accordion';
+import Form from '../components/Form';
 
 const Home = () => {
     return (
@@ -19,6 +20,9 @@ const Home = () => {
             {/* Accordion */}
             <Accordion />
             {/* Accordion */}
+            {/* Formulatio */}
+            <Form />
+            {/* Formulatio */}
         </section>
     );
 };
