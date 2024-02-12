@@ -28,7 +28,8 @@ body {
   background-color: #000;
   background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url(../public/paralax-1.webp);
   background-position: 50% 50%;
-  background-attachment: fixed; /* Agregamos esta línea para el efecto de paralaje */
+  background-attachment: fixed;
+  /* Agregamos esta línea para el efecto de paralaje */
   overflow: hidden;
   box-sizing: content-box;
   backdrop-filter: blur(0);
