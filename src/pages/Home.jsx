@@ -10,6 +10,7 @@ import FloatingButton from '../components/FloattingButton';
 import ScrollToTopButton from '../components/ScrollToTopButton';
 import Cards2 from '../components/Cards2';
 import AboutUsSection from '../components/AboutUsSection';
+import Footer from '../components/Footer';
 
 const Home = () => {
     return (
@@ -17,9 +18,7 @@ const Home = () => {
             {/* Hero */}
             <Hero />
             {/* Hero */}
-<AboutUsSection/>
-
-
+            <AboutUsSection />
             {/* Cards */}
             <Cards />
             {/* Cards */}
@@ -43,6 +42,8 @@ const Home = () => {
             <ScrollToTopButton />
             <FloatingButton />
             {/* Floatting Buttons */}
+            {/* Footer */}
+            <Footer/>
         </section>
     );
 };
