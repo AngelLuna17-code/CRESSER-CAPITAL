@@ -5,6 +5,8 @@ import Counter from "../components/Counter"
 import Accordion from '../components/Accordion';
 import Form from '../components/Form';
 import Mapa from '../components/Mapa';
+import FloatingButton from '../components/FloattingButton';
+import ScrollToTopButton from '../components/ScrollToTopButton';
 
 const Home = () => {
     return (
@@ -27,6 +29,10 @@ const Home = () => {
             {/* Mapa */}
             <Mapa />
             {/* Mapa */}
+            {/* Floatting Buttons */}
+            <ScrollToTopButton />
+            <FloatingButton />
+            {/* Floatting Buttons */}
         </section>
     );
 };
