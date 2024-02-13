@@ -12,11 +12,6 @@ const Accordion = () => {
             <div className='w-full  py-[100px]'>
                 <div className='container mx-auto'>
                     <div className='grid grid cols-1 lg:grid-cols-2'>
-                        <div className='flex items-center justify-center'>
-                            <h2>
-                                Preguntas frecuentes
-                            </h2>
-                        </div>
                         <div className='mt-5 lg:mt-0'>
                             {/* Accordion 1 */}
                             <button className={`accordion text-xl hover:text-[#a18144] ${activeIndex === 0 ? 'active' : ''}`} onClick={() => togglePanel(0)}>¿Dónde invertimos?</button>
@@ -66,6 +61,11 @@ const Accordion = () => {
                                 </div>
                             </div>
                             {/* Accordion 3 */}
+                        </div>
+                        <div className='flex items-center justify-center'>
+                            <h2 className='font-bold'>
+                                Preguntas frecuentes
+                            </h2>
                         </div>
                     </div>
                 </div>

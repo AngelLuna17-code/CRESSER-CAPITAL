@@ -26,7 +26,12 @@ function Form() {
         <section>
             <div className='w-full py-[100px]'>
                 <div className='container mx-auto'>
-                    <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-5'>
+                    <div className='text-center'>
+                        <h2>
+                            Contacto
+                        </h2>
+                    </div>
+                    <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-5 mt-5'>
                         {/* Cards */}
                         <div >
                             <div className='grid grid-cols-2 gap-5'>

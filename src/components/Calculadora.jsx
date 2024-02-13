@@ -46,8 +46,15 @@ const Calculadora = () => {
 
     return (
         <section>
-            <div className='container mx-auto'>
+            <div className='container mx-auto py-[100px]'>
                 <div className='grid grid-cols-2'>
+                    <div className='flex items-center justify-center'>
+                        <h2 className='font-bold'>
+                            Ten una previa de{' '}
+                            <br />
+                            <span className='text-[#a18144]'>tu dinero a crecer</span>
+                        </h2>
+                    </div>
                     {/* Calculadora */}
                     <div>
                         <div className='grid grid-cols-2'>
@@ -128,13 +135,6 @@ const Calculadora = () => {
                         {/* botón limpiar */}
                     </div>
                     {/* Calculadora */}
-                    <div className='flex items-center justify-center'>
-                        <h2>
-                            Ten una previa de{' '}
-                            <br />
-                            <span className='text-[#a18144]'>tu dinero a crecer</span>
-                        </h2>
-                    </div>
                 </div>
             </div>
         </section>
