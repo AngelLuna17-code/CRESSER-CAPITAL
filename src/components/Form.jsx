@@ -170,11 +170,16 @@ function Form() {
                                     />
                                 </div>
                                 {/* Mensaje */}
+                                {/* Button enviar */}
                                 <div className='flex justify-center mt-5'>
-                                    <button type="submit">
+                                    <button
+                                        className='bg-[#9a7b46] hover:bg-[#2b2314] text-white px-6 py-2 rounded-[15px] ml-3'
+                                        type="submit"
+                                    >
                                         Enviar
                                     </button>
                                 </div>
+                                {/* Button enviar */}
                             </form>
                         </div>
                         {/* Formularion */}

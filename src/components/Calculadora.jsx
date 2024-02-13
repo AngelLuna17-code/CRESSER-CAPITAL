@@ -6,6 +6,7 @@ const Calculadora = () => {
     const [term, setTerm] = useState('6');
     const [yieldAmount, setYieldAmount] = useState('');
     const [totalAmount, setTotalAmount] = useState('');
+    const [cleaned, setCleaned] = useState(false);
 
     const handleCalculate = () => {
         if (amount < 10000) {
@@ -32,7 +33,15 @@ const Calculadora = () => {
                 default:
                     break;
             }
+            setCleaned(true);
         }
+    };
+
+    const handleClear = () => {
+        setAmount('');
+        setYieldAmount('');
+        setTotalAmount('');
+        setCleaned(false);
     };
 
     return (
@@ -50,7 +59,7 @@ const Calculadora = () => {
                                     className='w-full p-3 bg-[#1b1b1b] hover:bg-[#2c2a2a] mt-3'
                                     type="number"
                                     id="amount"
-                                    value={amount}
+                                    value={cleaned ? '' : amount} // Limpia el campo si cleaned es verdadero
                                     onChange={(e) => setAmount(e.target.value)}
                                 />
                             </div>
@@ -80,36 +89,51 @@ const Calculadora = () => {
                             </button>
                         </div>
                         {/* Button calcular */}
-                        {/* Rendimiento */}
-                        <div className='mt-3 px-[10px]'>
-                            <label htmlFor="yield">Rendimiento:</label>
-                            <br />
-                            <input
-                                className='w-full p-3 bg-[#1b1b1b] hover:bg-[#2c2a2a] mt-3'
-                                type="text"
-                                id="yield"
-                                value={yieldAmount}
-                                readOnly
-                            />
+                        <div>
+                            {/* Rendimiento */}
+                            <div className='mt-3 px-[10px]'>
+                                <label htmlFor="yield">Rendimiento:</label>
+                                <br />
+                                <input
+                                    className='w-full p-3 bg-[#1b1b1b] hover:bg-[#2c2a2a] mt-3'
+                                    type="text"
+                                    id="yield"
+                                    value={yieldAmount}
+                                    readOnly
+                                />
+                            </div>
+                            {/* Rendimiento */}
+                            {/* Total */}
+                            <div className='mt-3 px-[10px]'>
+                                <label htmlFor="total">Total:</label>
+                                <br />
+                                <input
+                                    className='w-full p-3 bg-[#1b1b1b] hover:bg-[#2c2a2a] mt-3'
+                                    type="text"
+                                    id="total"
+                                    value={totalAmount}
+                                    readOnly
+                                />
+                            </div>
+                            {/* Total */}
                         </div>
-                        {/* Rendimiento */}
-                        {/* Total */}
-                        <div className='mt-3 px-[10px]'>
-                            <label htmlFor="total">Total:</label>
-                            <br />
-                            <input
-                                className='w-full p-3 bg-[#1b1b1b] hover:bg-[#2c2a2a] mt-3'
-                                type="text"
-                                id="total"
-                                value={totalAmount}
-                                readOnly
-                            />
+                        {/* botón limpiar */}
+                        <div className='flex items-center justify-center mt-5'>
+                            <button
+                                className='bg-[#9a7b46] hover:bg-[#2b2314] text-white px-6 py-2 rounded-[15px] ml-4'
+                                onClick={handleClear}>
+                                Limpiar
+                            </button>
                         </div>
-                        {/* Total */}
+                        {/* botón limpiar */}
                     </div>
                     {/* Calculadora */}
-                    <div>
-
+                    <div className='flex items-center justify-center'>
+                        <h2>
+                            Ten una previa de{' '}
+                            <br />
+                            <span className='text-[#a18144]'>tu dinero a crecer</span>
+                        </h2>
                     </div>
                 </div>
             </div>
