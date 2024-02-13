@@ -48,8 +48,8 @@ const Counter = () => {
 
     return (
         <div className='paralax-1 w-full'>
-            <div id="counter-section" className='container mx-auto py-[100px]'>
-                <div className='grid grid-cols-2 lg:grid-cols-4'>
+            <div id="counter-section" className='container mx-auto py-[100px] px-[10px] lg:px-0'>
+                <div className='grid grid-cols-1 lg:grid-cols-4 gap-8'>
                     {/* Col 1 */}
                     <div className='text-center flex items-center justify-center'>
                         <h2>
@@ -58,59 +58,65 @@ const Counter = () => {
                     </div>
                     {/* Col 1 */}
                     {/* Col 2 */}
-                    <div className='text-center'>
-                        <h2>
-                            {count1}
-                        </h2>
-                        <p className='text-xl'>
-                            <span className='text-[#a18144] '>
-                                inversionistas
-                            </span>
-                            {' '}
-                            felices
-                        </p>
+                    <div className='text-center flex items-center justify-center'>
+                        <div>
+                            <h2>
+                                {count1}
+                            </h2>
+                            <p className='text-xl'>
+                                <span className='text-[#a18144] '>
+                                    inversionistas
+                                </span>
+                                {' '}
+                                felices
+                            </p>
+                        </div>
                     </div>
                     {/* Col 2 */}
                     {/* Col 3 */}
-                    <div className='text-center'>
-                        <h2>
-                            {count2}
-                        </h2>
-                        <p className='text-xl'>
-                            15 empresas
-                            {' '}
-                            <span className='text-[#a18144]'>
-                                invirtiendo
-                            </span>
-                        </p>
+                    <div className='text-center flex items-center justify-center'>
+                        <div>
+                            <h2>
+                                {count2}
+                            </h2>
+                            <p className='text-xl'>
+                                15 empresas
+                                {' '}
+                                <span className='text-[#a18144]'>
+                                    invirtiendo
+                                </span>
+                            </p>
+                        </div>
                     </div>
                     {/* Col 3 */}
                     {/* Col 4 */}
-                    <div className='text-center'>
-                        <h2>
-                            Inversión
-                            {' '}
-                            <span className='text-[#a18144]'>
-                                {count3}
-                                %
-                            </span>
-                            {' '}
-                            segura
-                        </h2>
-                        <p className='text-xl'>
-                            Hasta un rendimiento bruto del
-                            {' '}
-                            <span className='text-[#a18144]'>
-                                20%
-                            </span>
-                            .
-                        </p>
+                    <div className='text-center flex items-center justify-center'>
+                        <div>
+                            <h2>
+                                Inversión
+                                {' '}
+                                <span className='text-[#a18144]'>
+                                    {count3}
+                                    %
+                                </span>
+                                {' '}
+                                segura
+                            </h2>
+                            <p className='text-xl'>
+                                Hasta un rendimiento bruto del
+                                {' '}
+                                <span className='text-[#a18144]'>
+                                    20%
+                                </span>
+                                .
+                            </p>
+                        </div>
+
                     </div>
                     {/* Col 4 */}
                 </div>
             </div>
         </div>
-
     );
 };
 
