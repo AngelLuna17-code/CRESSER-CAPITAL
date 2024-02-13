@@ -26,7 +26,7 @@ function Form() {
         <section>
             <div className='w-full py-[100px]'>
                 <div className='container mx-auto'>
-                    <div className='grid grid-cols-1 lg:grid-cols-2 gap-5'>
+                    <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-5'>
                         {/* Cards */}
                         <div >
                             <div className='grid grid-cols-2 gap-5'>
