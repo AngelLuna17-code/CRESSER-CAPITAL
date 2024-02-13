@@ -5,6 +5,7 @@ import Counter from "../components/Counter"
 import Accordion from '../components/Accordion';
 import Form from '../components/Form';
 import Mapa from '../components/Mapa';
+import Calculadora from '../components/Calculadora';
 import FloatingButton from '../components/FloattingButton';
 import ScrollToTopButton from '../components/ScrollToTopButton';
 
@@ -23,6 +24,9 @@ const Home = () => {
             {/* Accordion */}
             <Accordion />
             {/* Accordion */}
+            {/* Calculadora */}
+            <Calculadora />
+            {/* Calculadora */}
             {/* Formulatio */}
             <Form />
             {/* Formulatio */}
