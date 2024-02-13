@@ -3,7 +3,7 @@ import React from 'react';
 const Cards = () => {
     return (
         <section>
-            <div className='w-full py-[100px]'>
+            <div className='w-full py-[50px] lg:py-[100px] px-[10px] lg:px-0'>
                 <div className='container mx-auto'>
                     <div>
                         <h2 className='text-center'>
@@ -15,7 +15,7 @@ const Cards = () => {
                     </div>
                     <div className='grid grid-cols-2 lg:grid-cols-4 gap-5 mt-5'>
                         {/* Card 1 */}
-                        <div className='bg-[#1b1b1b] hover:bg-[#2c2a2a] p-5 flex items-center justify-center'>
+                        <div className='bg-[#1b1b1b] hover:bg-[#2c2a2a] p-2 lg:p-5 flex items-center justify-center'>
                             <div className=''>
                                 <div class="flex justify-center">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" viewBox="0 0 16 16" className="transition-transform transform hover:scale-110 cursor-pointer text-[#a18144]">
@@ -29,7 +29,7 @@ const Cards = () => {
                         </div>
                         {/* Card 1 */}
                         {/* Card 2 */}
-                        <div className='bg-[#1b1b1b] hover:bg-[#2c2a2a] p-5 flex items-center justify-center'>
+                        <div className='bg-[#1b1b1b] hover:bg-[#2c2a2a] p-2 lg:p-5 flex items-center justify-center'>
                             <div>
                                 <div className='flex justify-center'>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" viewBox="0 0 16 16" className="transition-transform transform hover:scale-110 cursor-pointer text-[#a18144]">
@@ -44,7 +44,7 @@ const Cards = () => {
                         </div>
                         {/* Card 2 */}
                         {/* Card 3 */}
-                        <div className='bg-[#1b1b1b] hover:bg-[#2c2a2a] p-5 flex items-center justify-center'>
+                        <div className='bg-[#1b1b1b] hover:bg-[#2c2a2a] p-2 lg:p-5 flex items-center justify-center'>
                             <div>
                                 <div className='flex justify-center'>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" viewBox="0 0 16 16" className="transition-transform transform hover:scale-110 cursor-pointer text-[#a18144]">
@@ -58,7 +58,7 @@ const Cards = () => {
                         </div>
                         {/* Card 3 */}
                         {/* Card 4 */}
-                        <div className='bg-[#1b1b1b] hover:bg-[#2c2a2a] p-5 flex items-center justify-center'>
+                        <div className='bg-[#1b1b1b] hover:bg-[#2c2a2a] p-2 lg:p-5 flex items-center justify-center'>
                             <div>
                                 <div className='flex justify-center'>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" viewBox="0 0 16 16" className="transition-transform transform hover:scale-110 cursor-pointer text-[#a18144]">
