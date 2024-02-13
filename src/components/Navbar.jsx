@@ -29,8 +29,8 @@ const Navbar = () => {
 
   return (
     <section>
-      <div className="top-0 text-white fixed top-0 w-screen min-h-[70px] z-30" style={{ background: 'rgba(0, 0, 0, 0.7)', backdropFilter: 'blur(10px)', WebkitBackdropFilter: 'blur(10px)' }}>
-        <div className='container mx-auto'>
+      <div className="flex items-center jusrify-center top-0 text-white fixed top-0 w-screen min-h-[70px] z-30" style={{ background: 'rgba(0, 0, 0, 0.7)', backdropFilter: 'blur(10px)', WebkitBackdropFilter: 'blur(10px)' }}>
+        <div className='container mx-auto py-3 px-[20px] lg:px-0'>
           <nav ref={menuRef} >
             <div className='flex justify-between items-center'>
               {/* Logo */}
