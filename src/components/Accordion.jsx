@@ -9,10 +9,10 @@ const Accordion = () => {
 
     return (
         <section>
-            <div className='w-full  py-[100px]'>
+            <div className='w-full py-[50px] lg:py-[100px] px-[10px] lg:px-0'>
                 <div className='container mx-auto'>
                     <div className='grid grid cols-1 lg:grid-cols-2'>
-                        <div className='mt-5 lg:mt-0'>
+                        <div className='mt-5 lg:mt-0 order-2 lg:order-1'>
                             {/* Accordion 1 */}
                             <button className={`accordion text-xl hover:text-[#a18144] ${activeIndex === 0 ? 'active' : ''}`} onClick={() => togglePanel(0)}>¿Dónde invertimos?</button>
                             <div className="panel" style={{ maxHeight: activeIndex === 0 ? '250px' : '0px' }}>
@@ -62,7 +62,7 @@ const Accordion = () => {
                             </div>
                             {/* Accordion 3 */}
                         </div>
-                        <div className='flex items-center justify-center'>
+                        <div className='flex items-center justify-center order-1 lg:order-2'>
                             <h2 className='font-bold'>
                                 Preguntas frecuentes
                             </h2>

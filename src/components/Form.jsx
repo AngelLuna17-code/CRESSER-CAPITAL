@@ -24,7 +24,7 @@ function Form() {
 
     return (
         <section>
-            <div className='w-full py-[100px]'>
+            <div className='w-full py-[50px] lg:py-[100px]'>
                 <div className='container mx-auto'>
                     <div className='text-center'>
                         <h2>
@@ -34,7 +34,7 @@ function Form() {
                     <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-5 mt-5'>
                         {/* Cards */}
                         <div >
-                            <div className='grid grid-cols-2 gap-5'>
+                            <div className='grid grid-cols-2 gap-5 px-[10px] lg:px-0'>
                                 {/* Card 1 */}
                                 <div className='bg-[#1b1b1b] hover:bg-[#2c2a2a] p-5 flex items-center justify-center'>
                                     <div className=''>
@@ -87,7 +87,7 @@ function Form() {
                                             <p>
                                                 Correo:
                                             </p>
-                                            <p>
+                                            <p className='break-all'>
                                                 contacto@cressercapital.com.mx
                                             </p>
                                         </div>

@@ -46,8 +46,8 @@ const Calculadora = () => {
 
     return (
         <section>
-            <div className='container mx-auto py-[100px]'>
-                <div className='grid grid-cols-2'>
+            <div className='container mx-auto py-[50px] lg:py-[100px]'>
+                <div className='grid grid-cols-1 lg:grid-cols-2'>
                     <div className='flex items-center justify-center'>
                         <h2 className='font-bold'>
                             Ten una previa de{' '}
@@ -56,7 +56,7 @@ const Calculadora = () => {
                         </h2>
                     </div>
                     {/* Calculadora */}
-                    <div>
+                    <div className='mt-5 lg:mt-0'>
                         <div className='grid grid-cols-2'>
                             {/* Cantidad */}
                             <div className='px-[10px]'>
