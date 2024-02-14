@@ -66,7 +66,7 @@ const Calculadora = () => {
                                     className='w-full p-3 bg-[#1b1b1b] hover:bg-[#2c2a2a] mt-3'
                                     type="number"
                                     id="amount"
-                                    value={cleaned ? '' : amount} // Limpia el campo si cleaned es verdadero
+                                    value={cleaned ? '' : amount}
                                     onChange={(e) => setAmount(e.target.value)}
                                 />
                             </div>
