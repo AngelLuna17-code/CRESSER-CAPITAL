@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Swal from 'sweetalert2';
 
 const Calculadora = () => {
-    const [amount, setAmount] = useState('');
+    const [amount, setAmount] = useState('10000'); // Set initial amount to '10000'
     const [term, setTerm] = useState('6');
     const [yieldAmount, setYieldAmount] = useState('');
     const [totalAmount, setTotalAmount] = useState('');
@@ -38,7 +38,7 @@ const Calculadora = () => {
     };
 
     const handleClear = () => {
-        setAmount('');
+        setAmount('10000'); // Reset amount to '10000'
         setYieldAmount('');
         setTotalAmount('');
         setCleaned(false);
@@ -70,16 +70,31 @@ const Calculadora = () => {
                                     onChange={(e) => setAmount(e.target.value)}
                                 />
                             </div>
-                            {/* Cantidad */}
+                            {/* Range Input */}
+                            <div className='px-[10px]'>
+                                <label htmlFor="rangeAmount">Cantidad (rango):</label>
+                                <br />
+                                <input
+                                    type="range"
+                                    id="rangeAmount"
+                                    className='w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer mt-3'
+                                    min="10000"
+                                    max="100000"
+                                    step="10000"
+                                    value={amount}
+                                    onChange={(e) => setAmount(e.target.value)}
+                                />
+                            </div>
+                            {/* Range Input */}
                             {/* Plazo */}
                             <div className='px-[10px]'>
                                 <label htmlFor="term">Plazo:</label>
                                 <br />
-                                <select className='w-full p-[15px] bg-[#1b1b1b] hover:bg-[#2c2a2a] mt-3'
+                                <select
+                                    className='w-full p-[15px] bg-[#1b1b1b] hover:bg-[#2c2a2a] mt-3'
                                     id="term"
                                     value={term}
-                                    onChange={(e) =>
-                                        setTerm(e.target.value)}
+                                    onChange={(e) => setTerm(e.target.value)}
                                 >
                                     <option value="6">6 meses</option>
                                     <option value="12">12 meses</option>
