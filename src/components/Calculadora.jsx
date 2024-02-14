@@ -59,7 +59,7 @@ const Calculadora = () => {
                     <div className='mt-5 lg:mt-0'>
                         <div className='grid grid-cols-2'>
                             {/* Cantidad */}
-                            <div className='px-[10px]'>
+                            <div className='px-[10px] relative'>
                                 <label htmlFor="amount">Cantidad:</label>
                                 <br />
                                 <input
@@ -69,6 +69,11 @@ const Calculadora = () => {
                                     value={cleaned ? '' : amount}
                                     onChange={(e) => setAmount(e.target.value)}
                                 />
+                                {/* Div cuadrado que se llena */}
+                                <div className="square">
+                                    <div className="fill" style={{ height: `${(amount / 100000) * 100}%` }}></div>
+                                </div>
+                                {/* Div cuadrado que se llena */}
                             </div>
                             {/* Range Input */}
                             <div className='px-[10px]'>
