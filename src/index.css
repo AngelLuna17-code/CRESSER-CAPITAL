@@ -5,28 +5,29 @@
 body {
   min-width: 360px;
   margin: 0 auto;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
   background-color: #000000;
   color: white;
 }
 
-.hero {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #000;
-  background-image: linear-gradient(rgba(1, 1, 1, .5), rgba(1, 1, 0, 2)), url(../public/hero.webp);
-  background-position: 50% 50%;
-  overflow: hidden;
-  box-sizing: content-box;
-  backdrop-filter: blur(0);
-  -webkit-backdrop-filter: blur(0)
+.paralax-1 {
+  background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url(../public/paralax-1.webp);
 }
 
-.paralax-1 {
+.paralax-2 {
+  background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url(../public/paralax-2.webp);
+}
+
+.paralax-3 {
+  background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url(../public/paralax-3.webp);
+}
+
+.paralax-1,
+.paralax-2,
+.paralax-3 {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #000;
-  background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url(../public/paralax-1.webp);
   background-position: 50% 50%;
   background-attachment: fixed;
   overflow: hidden;
@@ -74,40 +75,21 @@ body {
 }
 
 h1 {
-  font-size: 34px;
+  font-size: 36px;
+  /* Tamaño base */
 }
 
 h2 {
-  font-size: 18px;
+  font-size: 20px;
+  /* Tamaño base */
 }
 
 h3 {
-  font-size: 17px;
-}
-
-p {
-  font-size: 14px;
+  font-size: 18px;
+  /* Tamaño base */
 }
 
 @media screen and (min-width: 640px) {
-  h1 {
-    font-size: 36px;
-  }
-
-  h2 {
-    font-size: 20px;
-  }
-
-  h3 {
-    font-size: 18px;
-  }
-
-  p {
-    font-size: 15px;
-  }
-}
-
-@media screen and (min-width: 768px) {
   h1 {
     font-size: 38px;
   }
@@ -121,7 +103,7 @@ p {
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   h1 {
     font-size: 40px;
   }
@@ -133,13 +115,9 @@ p {
   h3 {
     font-size: 22px;
   }
-
-  p {
-    font-size: 16px;
-  }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1024px) {
   h1 {
     font-size: 42px;
   }
@@ -153,7 +131,7 @@ p {
   }
 }
 
-@media screen and (min-width: 1536px) {
+@media screen and (min-width: 1280px) {
   h1 {
     font-size: 44px;
   }
@@ -164,5 +142,19 @@ p {
 
   h3 {
     font-size: 26px;
+  }
+}
+
+@media screen and (min-width: 1536px) {
+  h1 {
+    font-size: 46px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 28px;
   }
 }

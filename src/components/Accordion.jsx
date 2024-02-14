@@ -63,7 +63,7 @@ const Accordion = () => {
                             {/* Accordion 3 */}
                         </div>
                         <div className='flex items-center justify-center order-1 lg:order-2'>
-                            <h2 className='font-bold'>
+                            <h2>
                                 Preguntas frecuentes
                             </h2>
                         </div>

@@ -49,7 +49,7 @@ const Calculadora = () => {
             <div className='container mx-auto py-[50px] lg:py-[100px]'>
                 <div className='grid grid-cols-1 lg:grid-cols-2'>
                     <div className='flex items-center justify-center'>
-                        <h2 className='font-bold'>
+                        <h2>
                             Ten una previa de{' '}
                             <br />
                             <span className='text-[#a18144]'>tu dinero a crecer</span>

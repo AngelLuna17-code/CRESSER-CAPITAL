@@ -1,49 +1,43 @@
 import React from 'react';
 import Hero from '../components/Hero';
+import AboutUsSection from '../components/AboutUsSection';
 import Cards from "../components/Cards";
-import Counter from "../components/Counter"
 import Accordion from '../components/Accordion';
+import Counter from "../components/Counter"
+import Calculadora from '../components/Calculadora';
+import Cards2 from '../components/Cards2';
 import Form from '../components/Form';
 import Mapa from '../components/Mapa';
-import Calculadora from '../components/Calculadora';
+import Footer from '../components/Footer';
 import FloatingButton from '../components/FloattingButton';
 import ScrollToTopButton from '../components/ScrollToTopButton';
-import Cards2 from '../components/Cards2';
-import AboutUsSection from '../components/AboutUsSection';
-import Footer from '../components/Footer';
 
 const Home = () => {
     return (
         <section>
             {/* Hero */}
             <Hero />
-            {/* Hero */}
+            {/* About */}
             <AboutUsSection />
             {/* Cards */}
             <Cards />
-            {/* Cards */}
-            {/* Counter */}
-            <Counter />
-            {/* Counter */}
-            <Cards2 />
-            {/* Calculadora */}
-            <Calculadora />
-            {/* Calculadora */}
             {/* Accordion */}
             <Accordion />
-            {/* Accordion */}
+            {/* Counter */}
+            <Counter />
+            {/* Calculadora */}
+            <Calculadora />
+            {/* Cards 2 */}
+            <Cards2 />
             {/* Formulatio */}
             <Form />
-            {/* Formulatio */}
             {/* Mapa */}
             <Mapa />
-            {/* Mapa */}
+            {/* Footer */}
+            <Footer />
             {/* Floatting Buttons */}
             <ScrollToTopButton />
             <FloatingButton />
-            {/* Floatting Buttons */}
-            {/* Footer */}
-            <Footer/>
         </section>
     );
 };
