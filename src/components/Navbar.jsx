@@ -77,17 +77,17 @@ const Navbar = () => {
                       </Link>
                     </li>
                     <li>
-                      <Link className="text-white hover:text-[#a18144]" smooth to="/#service">
-                        Invierte
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="text-white hover:text-[#a18144]" smooth to="/#portafolio">
+                      <Link className="text-white hover:text-[#a18144]" smooth to="/#about">
                         Nosotros
                       </Link>
                     </li>
                     <li>
-                      <Link className="text-white hover:text-[#a18144]" to="Facturas" onClick={closeMenuOnClick}>
+                      <Link className="text-white hover:text-[#a18144]" smooth to="/#cards">
+                        Invierte
+                      </Link>
+                    </li>
+                    <li>
+                      <Link className="text-white hover:text-[#a18144]" smooth to="/#contacto" onClick={closeMenuOnClick}>
                         Contacto
                       </Link>
                     </li>
@@ -105,17 +105,17 @@ const Navbar = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link className="text-white hover:text-[#a18144]" smooth to="/#service">
-                      Invierte
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="text-white hover:text-[#a18144]" smooth to="/#portafolio">
+                    <Link className="text-white hover:text-[#a18144]" smooth to="/#about" onClick={closeMenuOnClick}>
                       Nosotros
                     </Link>
                   </li>
                   <li>
-                    <Link className="text-white hover:text-[#a18144]" to="Facturas" onClick={closeMenuOnClick}>
+                    <Link className="text-white hover:text-[#a18144]" smooth to="/#cards" onClick={closeMenuOnClick}>
+                      Invierte
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="text-white hover:text-[#a18144]" smooth to="/#contacto" onClick={closeMenuOnClick}>
                       Contacto
                     </Link>
                   </li>
