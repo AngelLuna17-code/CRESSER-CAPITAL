@@ -38,7 +38,7 @@ const Calculadora = () => {
     };
 
     const handleClear = () => {
-        setAmount('10000'); // Reset amount to '10000'
+        setAmount('10000');
         setYieldAmount('');
         setTotalAmount('');
         setCleaned(false);
