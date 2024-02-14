@@ -161,10 +161,11 @@ h3 {
 
 .square {
   transform: rotate(180deg);
-  width: 100%;
+  width: 150px;
   height: 150px; 
   background-color: #ccc;
   overflow: hidden;
+  border-radius: 100%;
 }
 
 .fill {
