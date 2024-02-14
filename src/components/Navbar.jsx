@@ -69,6 +69,7 @@ const Navbar = () => {
                   </button>
                 </div>
                 {/* Burger button */}
+                {/* Links */}
                 <div className='overflow-hidden hidden lg:flex items-center px-10'>
                   <ul className='list-none flex items-center space-x-12'>
                     <li>
@@ -93,6 +94,7 @@ const Navbar = () => {
                     </li>
                   </ul>
                 </div>
+                {/* Links */}
               </div>
             </div>
             {/* Dropdown */}
