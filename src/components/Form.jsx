@@ -24,7 +24,7 @@ function Form() {
 
     return (
         <section>
-            <div id='contacto' className='w-full py-[50px] lg:py-[100px]'>
+            <div id='contacto' className='w-full py-[50px] lg:py-[100px] px-[10px] lg:px-0'>
                 <div className='container mx-auto'>
                     <div className='text-center'>
                         <h2>
@@ -34,7 +34,7 @@ function Form() {
                     <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-5 mt-5'>
                         {/* Cards */}
                         <div >
-                            <div className='grid grid-cols-2 gap-5 px-[10px] lg:px-0'>
+                            <div className='grid grid-cols-2 gap-5'>
                                 {/* Card 1 */}
                                 <div className='bg-[#1b1b1b] hover:bg-[#2c2a2a] p-5 flex items-center justify-center'>
                                     <div className=''>
@@ -117,11 +117,11 @@ function Form() {
                         </div>
                         {/* Cards */}
                         {/* Formularion */}
-                        <div className=''>
+                        <div>
                             <form onSubmit={handleSubmit}>
-                                <div className='grid grid-cols-2'>
+                                <div className='grid grid-cols-2 gap-5'>
                                     {/* Nombre */}
-                                    <div className='px-[10px]'>
+                                    <div className=''>
                                         <input
                                             className='w-full p-3 bg-[#1b1b1b] hover:bg-[#2c2a2a]'
                                             type="text"
@@ -135,7 +135,7 @@ function Form() {
                                     </div>
                                     {/* Nombre */}
                                     {/* Correo */}
-                                    <div className='px-[10px]'>
+                                    <div className=''>
                                         <input
                                             className='w-full p-3 bg-[#1b1b1b] hover:bg-[#2c2a2a]'
                                             type="email"
@@ -150,7 +150,7 @@ function Form() {
                                     {/* Correo */}
                                 </div>
                                 {/* Asunto */}
-                                <div className='px-[10px] mt-5'>
+                                <div className='mt-5'>
                                     <input
                                         className='w-full p-3 bg-[#1b1b1b] hover:bg-[#2c2a2a]'
                                         type="text"
@@ -164,7 +164,7 @@ function Form() {
                                 </div>
                                 {/* Asunto */}
                                 {/* Mensaje */}
-                                <div className='px-[10px] mt-5'>
+                                <div className='mt-5'>
                                     <textarea
                                         className='w-full h-[150px] p-3 bg-[#1b1b1b] hover:bg-[#2c2a2a]'
                                         id="message"
@@ -178,7 +178,7 @@ function Form() {
                                 {/* Button enviar */}
                                 <div className='flex justify-center mt-5'>
                                     <button
-                                        className='bg-[#9a7b46] hover:bg-[#2b2314] text-white px-6 py-2 rounded-[15px] ml-3'
+                                        className='bg-[#9a7b46] hover:bg-[#2b2314] text-white px-6 py-2 rounded-[15px]'
                                         type="submit"
                                     >
                                         Enviar

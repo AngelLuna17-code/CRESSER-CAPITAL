@@ -74,19 +74,31 @@ body {
   transition: max-height 0.2s ease-out;
 }
 
+.square {
+  transform: rotate(180deg);
+  width: 150px;
+  height: 150px;
+  background-color: #ccc;
+  overflow: hidden;
+  border-radius: 100%;
+}
+
+.fill {
+  width: 100%;
+  background-color: #9a7b46;
+  transition: height 0.1s ease-in-out;
+}
+
 h1 {
   font-size: 36px;
-  /* Tamaño base */
 }
 
 h2 {
   font-size: 20px;
-  /* Tamaño base */
 }
 
 h3 {
   font-size: 18px;
-  /* Tamaño base */
 }
 
 @media screen and (min-width: 640px) {
@@ -129,6 +141,11 @@ h3 {
   h3 {
     font-size: 24px;
   }
+
+  .square {
+    width: 200px;
+    height: 200px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
@@ -158,19 +175,3 @@ h3 {
     font-size: 28px;
   }
 }
-
-.square {
-  transform: rotate(180deg);
-  width: 150px;
-  height: 150px; 
-  background-color: #ccc;
-  overflow: hidden;
-  border-radius: 100%;
-}
-
-.fill {
-  width: 100%;
-  background-color: #9a7b46;
-  transition: height 0.3s ease-in-out;
-}
-
