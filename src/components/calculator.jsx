@@ -6,9 +6,11 @@ function Calculator() {
   const [plazo, setPlazo] = useState('6');
   const [rendimiento, setRendimiento] = useState('');
   const [total, setTotal] = useState('');
+  const [fillPercentage, setFillPercentage] = useState(0);
 
   useEffect(() => {
     setAmount(0);
+    setFillPercentage(0);
   }, []);
 
   const handleAmountChange = (e) => {
@@ -47,23 +49,42 @@ function Calculator() {
     } else {
       let totalr;
       let totalt;
+      let maxTotal;
       switch (plazo) {
         case '6':
           totalr = amount * 0.074;
           totalt = parseFloat(amount) + parseFloat(totalr);
+          maxTotal = 100000 + 100000 * 0.18; // Monto máximo + rendimiento máximo
           setRendimiento(totalr);
           setTotal(totalt);
+          animateFill((totalt / maxTotal) * 100);
           break;
         case '12':
           totalr = amount * 0.18;
           totalt = parseFloat(amount) + parseFloat(totalr);
+          maxTotal = 100000 + 100000 * 0.18; // Monto máximo + rendimiento máximo
           setRendimiento(totalr);
           setTotal(totalt);
+          animateFill((totalt / maxTotal) * 100);
           break;
         default:
           break;
       }
     }
+  };
+
+  const animateFill = (percentage) => {
+    let i = 0;
+    const intervalId = setInterval(() => {
+      setFillPercentage((prevPercentage) => {
+        i += 1;
+        if (prevPercentage >= percentage || i >= 100) {
+          clearInterval(intervalId);
+          return percentage;
+        }
+        return prevPercentage + 1;
+      });
+    }, 10);
   };
 
   return (
@@ -85,6 +106,7 @@ function Calculator() {
       <br />
       <label htmlFor="total">Total:</label>
       <input type="text" id="total" value={total} readOnly />
+      <div style={{ backgroundColor: '#9a7b46', height: '20px', width: `${fillPercentage}%`, transition: 'width 1s ease-in-out' }}></div>
     </div>
   );
 }
