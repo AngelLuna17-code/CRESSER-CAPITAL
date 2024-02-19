@@ -52,17 +52,17 @@ function Calculator() {
       let maxTotal;
       switch (plazo) {
         case '6':
-          totalr = amount * 0.074;
-          totalt = parseFloat(amount) + parseFloat(totalr);
-          maxTotal = 100000 + 100000 * 0.18;
+          totalr = (amount * 0.074).toFixed(2);
+          totalt = (parseFloat(amount) + parseFloat(totalr)).toFixed(2);
+          maxTotal = (100000 + 100000 * 0.18).toFixed(2);
           setRendimiento(totalr);
           setTotal(totalt);
           animateFill((totalt / maxTotal) * 100);
           break;
         case '12':
-          totalr = amount * 0.18;
-          totalt = parseFloat(amount) + parseFloat(totalr);
-          maxTotal = 100000 + 100000 * 0.18;
+          totalr = (amount * 0.18).toFixed(2);
+          totalt = (parseFloat(amount) + parseFloat(totalr)).toFixed(2);
+          maxTotal = (100000 + 100000 * 0.18).toFixed(2);
           setRendimiento(totalr);
           setTotal(totalt);
           animateFill((totalt / maxTotal) * 100);
@@ -85,6 +85,14 @@ function Calculator() {
         return prevPercentage + 1;
       });
     }, 10);
+  };
+
+  const handleReset = () => {
+    setAmount(0);
+    setPlazo('6');
+    setRendimiento('');
+    setTotal('');
+    setFillPercentage(0);
   };
 
   return (
@@ -188,6 +196,15 @@ function Calculator() {
             />
           </div>
           {/* Total */}
+          {/* Button limpiar */}
+          <div className='flex items-center justify-center mt-5'>
+            <button
+              className='bg-[#4a5568] hover:bg-[#2c3344] text-white px-6 py-2 rounded-[15px] ml-3'
+              onClick={handleReset}>
+              Limpiar
+            </button>
+          </div>
+          {/* Button limpiar */}
         </div>
         {/* Calculadora */}
       </div>
