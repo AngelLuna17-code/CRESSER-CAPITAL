@@ -202,7 +202,7 @@ function Calculator() {
           {/* Button limpiar */}
           <div className='flex items-center justify-center mt-5'>
             <button
-              className='bg-[#4a5568] hover:bg-[#2c3344] text-white px-6 py-2 rounded-[15px] ml-3'
+              className='bg-[#4a5568] hover:bg-[#2c3344] text-white px-6 py-2 rounded-[15px]'
               onClick={handleReset}>
               Limpiar
             </button>
