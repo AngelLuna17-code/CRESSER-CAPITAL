@@ -115,22 +115,23 @@ function Calculator() {
             </div>
             {/* Moneda */}
           </div>
-
         </div>
         {/* Calculadora */}
         <div>
           <div className='grid grid-cols-1 lg:grid-cols-2 gap-5'>
             {/* Cantidad */}
             <div>
-              <label htmlFor="amount">Monto:</label>
-              <input
-                className='w-full p-3 bg-[#1b1b1b] hover:bg-[#2c2a2a] mt-3'
-                type="number"
-                id="amount"
-                value={amount}
-                onChange={handleAmountChange}
-                max={100000}
-              />
+              <div>
+                <label htmlFor="amount">Monto:</label>
+                <input
+                  className='w-full p-3 bg-[#1b1b1b] hover:bg-[#2c2a2a] mt-3'
+                  type="number"
+                  id="amount"
+                  value={amount}
+                  onChange={handleAmountChange}
+                  max={100000}
+                />
+              </div>
               {/* Rango */}
               <div className='mt-5'>
                 <label htmlFor="rangeAmount">Cantidad (rango):</label>
@@ -143,7 +144,6 @@ function Calculator() {
                   onChange={handleRangeChange}
                 />
               </div>
-
               {/* Rango */}
             </div>
             {/* Cantidad */}
