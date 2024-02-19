@@ -12,11 +12,29 @@ function Calculator() {
   }, []);
 
   const handleAmountChange = (e) => {
-    setAmount(e.target.value);
+    const newValue = parseFloat(e.target.value);
+    if (newValue <= 100000) {
+      setAmount(newValue);
+    } else {
+      Swal.fire({
+        icon: 'error',
+        title: 'Monto excedido',
+        text: 'El monto máximo que se puede ingresar es 100,000',
+      });
+    }
   };
 
   const handleRangeChange = (e) => {
-    setAmount(e.target.value);
+    const newValue = parseFloat(e.target.value);
+    if (newValue <= 100000) {
+      setAmount(newValue);
+    } else {
+      Swal.fire({
+        icon: 'error',
+        title: 'Monto excedido',
+        text: 'El monto máximo que se puede ingresar es 100,000',
+      });
+    }
   };
 
   const handleCalculate = () => {
@@ -51,8 +69,8 @@ function Calculator() {
   return (
     <div className='text-black'>
       <label htmlFor="amount">Monto:</label>
-      <input type="number" id="amount" value={amount} onChange={handleAmountChange} />
-      <input type="range" min="0" max="20000" value={amount} onChange={handleRangeChange} />
+      <input type="number" id="amount" value={amount} onChange={handleAmountChange} max={100000} />
+      <input type="range" min="0" max="100000" value={amount} onChange={handleRangeChange} />
       <br />
       <label htmlFor="plazo">Plazo:</label>
       <select id="plazo" value={plazo} onChange={(e) => setPlazo(e.target.value)}>
