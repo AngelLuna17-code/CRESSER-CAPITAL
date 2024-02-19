@@ -54,7 +54,7 @@ function Calculator() {
         case '6':
           totalr = amount * 0.074;
           totalt = parseFloat(amount) + parseFloat(totalr);
-          maxTotal = 100000 + 100000 * 0.18; // Monto máximo + rendimiento máximo
+          maxTotal = 100000 + 100000 * 0.18;
           setRendimiento(totalr);
           setTotal(totalt);
           animateFill((totalt / maxTotal) * 100);
@@ -62,7 +62,7 @@ function Calculator() {
         case '12':
           totalr = amount * 0.18;
           totalt = parseFloat(amount) + parseFloat(totalr);
-          maxTotal = 100000 + 100000 * 0.18; // Monto máximo + rendimiento máximo
+          maxTotal = 100000 + 100000 * 0.18;
           setRendimiento(totalr);
           setTotal(totalt);
           animateFill((totalt / maxTotal) * 100);
@@ -88,7 +88,7 @@ function Calculator() {
   };
 
   return (
-    <div className='text-black'>
+    <div>
       <label htmlFor="amount">Monto:</label>
       <input type="number" id="amount" value={amount} onChange={handleAmountChange} max={100000} />
       <input type="range" min="0" max="100000" value={amount} onChange={handleRangeChange} />
