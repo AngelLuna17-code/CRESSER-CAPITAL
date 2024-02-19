@@ -11,6 +11,7 @@ import Mapa from '../components/Mapa';
 import Footer from '../components/Footer';
 import FloatingButton from '../components/FloattingButton';
 import ScrollToTopButton from '../components/ScrollToTopButton';
+import Calculator from '../components/calculator';
 
 const Home = () => {
     return (
@@ -34,6 +35,7 @@ const Home = () => {
             {/* Mapa */}
             <Mapa />
             {/* Footer */}
+            <Calculator/>
             <Footer />
             {/* Floatting Buttons */}
             <ScrollToTopButton />
