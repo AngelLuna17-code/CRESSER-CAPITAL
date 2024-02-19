@@ -97,7 +97,7 @@ function Calculator() {
 
   return (
     <section>
-      <div className='container mx-auto grid grid-cols-1 lg:grid-cols-2 py-[50px] lg:py-[100px]'>
+      <div className='container mx-auto grid grid-cols-1 lg:grid-cols-2 py-[50px] lg:py-[100px] px-[15px]'>
         <div className='flex items-center justify-center'>
           <div>
             <div className='text-center'>

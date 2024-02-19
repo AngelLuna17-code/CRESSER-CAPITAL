@@ -4,7 +4,7 @@ const AboutUsSection = () => {
 
     return (
         <section>
-            <div id='about' className='container mx-auto py-[50px] lg:py-[100px] px-[10px] lg:px-0'>
+            <div id='about' className='container mx-auto py-[50px] lg:py-[100px] px-[15px]'>
                 <div>
                     <div className='mt-5'>
                         <h2 className='text-center'>

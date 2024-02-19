@@ -9,7 +9,7 @@ const Accordion = () => {
 
     return (
         <section>
-            <div className='w-full py-[50px] lg:py-[100px] px-[10px] lg:px-0'>
+            <div className='w-full py-[50px] lg:py-[100px] px-[15px]'>
                 <div className='container mx-auto'>
                     <div className='grid grid cols-1 lg:grid-cols-2'>
                         <div className='mt-5 lg:mt-0 order-2 lg:order-1'>

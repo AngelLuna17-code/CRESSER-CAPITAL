@@ -4,7 +4,7 @@ const Cards2 = () => {
     return (
         <section>
             <div className='w-full  paralax-3'>
-                <div className='container mx-auto py-[50px] lg:py-[100px] px-[10px] lg:px-0'>
+                <div className='container mx-auto py-[50px] lg:py-[100px] px-[15px]'>
                     <div>
                         <h2 className='text-center'>
                             ¿Como iniciar?

@@ -48,7 +48,7 @@ const Counter = () => {
 
     return (
         <div className='paralax-1 w-full'>
-            <div id="counter-section" className='container mx-auto py-[100px] px-[10px] lg:px-0'>
+            <div id="counter-section" className='container mx-auto py-[100px] px-[15px]'>
                 <div className='grid grid-cols-1 lg:grid-cols-4 gap-8'>
                     {/* Col 1 */}
                     <div className='text-center flex items-center justify-center'>

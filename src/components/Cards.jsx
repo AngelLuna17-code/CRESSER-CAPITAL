@@ -4,7 +4,7 @@ const Cards = () => {
     return (
         <section>
             <div id='cards' className='w-full paralax-2'>
-                <div className='container mx-auto py-[50px] lg:py-[100px] px-[10px] lg:px-0'>
+                <div className='container mx-auto py-[50px] lg:py-[100px] px-[15px]'>
                     <div>
                         <h2 className='text-center'>
                             ¿Porqué{' '}<span className='text-[#a18144]'>invertir</span> con nosotros?

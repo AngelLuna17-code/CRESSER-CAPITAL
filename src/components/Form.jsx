@@ -24,7 +24,7 @@ function Form() {
 
     return (
         <section>
-            <div id='contacto' className='w-full py-[50px] lg:py-[100px] px-[10px] lg:px-0'>
+            <div id='contacto' className='w-full py-[50px] lg:py-[100px] px-[15px]'>
                 <div className='container mx-auto'>
                     <div className='text-center'>
                         <h2>
