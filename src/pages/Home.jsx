@@ -4,14 +4,13 @@ import AboutUsSection from '../components/AboutUsSection';
 import Cards from "../components/Cards";
 import Accordion from '../components/Accordion';
 import Counter from "../components/Counter"
-import Calculadora from '../components/Calculadora';
+import Calculator from '../components/calculator';
 import Cards2 from '../components/Cards2';
 import Form from '../components/Form';
 import Mapa from '../components/Mapa';
 import Footer from '../components/Footer';
 import FloatingButton from '../components/FloattingButton';
 import ScrollToTopButton from '../components/ScrollToTopButton';
-import Calculator from '../components/calculator';
 
 const Home = () => {
     return (
@@ -27,7 +26,7 @@ const Home = () => {
             {/* Counter */}
             <Counter />
             {/* Calculadora */}
-            <Calculadora />
+            <Calculator />
             {/* Cards 2 */}
             <Cards2 />
             {/* Formulatio */}
@@ -35,7 +34,6 @@ const Home = () => {
             {/* Mapa */}
             <Mapa />
             {/* Footer */}
-            <Calculator/>
             <Footer />
             {/* Floatting Buttons */}
             <ScrollToTopButton />

@@ -189,7 +189,7 @@ function Calculator() {
           {/* Rendimiento */}
           {/* Total */}
           <div className='mt-3'>
-            <label htmlFor="total">Total:</label>
+            <label htmlFor="total">Tu inversón asciende a:</label>
             <input
               className='w-full p-3 bg-[#1b1b1b] hover:bg-[#2c2a2a] mt-3'
               type="text"
