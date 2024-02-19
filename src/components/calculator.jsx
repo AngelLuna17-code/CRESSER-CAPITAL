@@ -88,26 +88,110 @@ function Calculator() {
   };
 
   return (
-    <div>
-      <label htmlFor="amount">Monto:</label>
-      <input type="number" id="amount" value={amount} onChange={handleAmountChange} max={100000} />
-      <input type="range" min="0" max="100000" value={amount} onChange={handleRangeChange} />
-      <br />
-      <label htmlFor="plazo">Plazo:</label>
-      <select id="plazo" value={plazo} onChange={(e) => setPlazo(e.target.value)}>
-        <option value="6">6 meses</option>
-        <option value="12">12 meses</option>
-      </select>
-      <br />
-      <button onClick={handleCalculate}>Calcular</button>
-      <br />
-      <label htmlFor="rendimiento">Rendimiento:</label>
-      <input type="text" id="rendimiento" value={rendimiento} readOnly />
-      <br />
-      <label htmlFor="total">Total:</label>
-      <input type="text" id="total" value={total} readOnly />
-      <div style={{ backgroundColor: '#9a7b46', height: '20px', width: `${fillPercentage}%`, transition: 'width 1s ease-in-out' }}></div>
-    </div>
+    <section>
+      <div className='container mx-auto grid grid-cols-1 lg:grid-cols-2 py-[50px] lg:py-[100px]'>
+        <div className='flex items-center justify-center'>
+          <div>
+            <div className='text-center'>
+              <h2>
+                Ten una previa de{' '}
+                <br />
+                <span className='text-[#a18144]'>tu dinero a crecer</span>
+              </h2>
+            </div>
+            {/* Moneda */}
+            <div className='coin'>
+              <div className='relleno'
+                style={{ backgroundColor: '#9a7b46', width: `${fillPercentage}%`, transition: 'width 1s ease-in-out' }}>
+              </div>
+            </div>
+            {/* Moneda */}
+          </div>
+
+        </div>
+        {/* Calculadora */}
+        <div>
+          <div className='grid grid-cols-1 lg:grid-cols-2 gap-5'>
+            {/* Cantidad */}
+            <div>
+              <label htmlFor="amount">Monto:</label>
+              <input
+                className='w-full p-3 bg-[#1b1b1b] hover:bg-[#2c2a2a] mt-3'
+                type="number"
+                id="amount"
+                value={amount}
+                onChange={handleAmountChange}
+                max={100000}
+              />
+              {/* Rango */}
+              <div className='mt-5'>
+                <label htmlFor="rangeAmount">Cantidad (rango):</label>
+                <input
+                  className='w-full h-2 rounded-lg appearance-none cursor-pointer mt-3 bg-[#9a7b46]'
+                  type="range"
+                  min="0"
+                  max="100000"
+                  value={amount}
+                  onChange={handleRangeChange}
+                />
+              </div>
+
+              {/* Rango */}
+            </div>
+            {/* Cantidad */}
+            {/* Plazos */}
+            <div>
+              <label htmlFor="plazo">Plazo:</label>
+              <select
+                className='w-full p-[15px] bg-[#1b1b1b] hover:bg-[#2c2a2a] mt-3'
+                id="plazo"
+                value={plazo}
+                onChange={(e) => setPlazo(e.target.value)}
+              >
+                <option value="6">6 meses</option>
+                <option value="12">12 meses</option>
+              </select>
+            </div>
+            {/* Plazos */}
+          </div>
+          {/* Button calcular */}
+          <div className='flex items-center justify-center mt-5'>
+            <button
+              className='bg-[#9a7b46] hover:bg-[#2b2314] text-white px-6 py-2 rounded-[15px]'
+              onClick={handleCalculate}>
+              Calcular
+            </button>
+          </div>
+          {/* Button calcular */}
+          {/* Rendimiento */}
+          <div className='mt-3'>
+            <label
+              htmlFor="rendimiento">Rendimiento:</label>
+            <input
+              className='w-full p-3 bg-[#1b1b1b] hover:bg-[#2c2a2a] mt-3'
+              type="text"
+              id="rendimiento"
+              value={rendimiento}
+              readOnly
+            />
+          </div>
+          {/* Rendimiento */}
+          {/* Total */}
+          <div className='mt-3'>
+            <label htmlFor="total">Total:</label>
+            <input
+              className='w-full p-3 bg-[#1b1b1b] hover:bg-[#2c2a2a] mt-3'
+              type="text"
+              id="total"
+              value={total}
+              readOnly
+            />
+          </div>
+          {/* Total */}
+        </div>
+        {/* Calculadora */}
+      </div>
+    </section>
   );
 }
 
