@@ -100,6 +100,7 @@ h2 {
 h3 {
   font-size: 18px;
 }
+
 .coin {
   border-radius: 100%;
   overflow: hidden;
@@ -110,9 +111,13 @@ h3 {
   transform: rotate(180deg);
 }
 
+.coin.active {
+  box-shadow: 0px 0px 5px 5px #9a7b46
+}
+
 .relleno {
   position: absolute;
-  top: 0; 
+  top: 0;
   left: 0;
   height: 100%;
 }
@@ -129,6 +134,7 @@ h3 {
 .relleno {
   width: 100%;
 }
+
 @media screen and (min-width: 640px) {
   h1 {
     font-size: 38px;
@@ -209,4 +215,3 @@ h3 {
     font-size: 28px;
   }
 }
-
